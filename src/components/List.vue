@@ -1,8 +1,9 @@
 <template>
     <div>
-        <h2>这是List组件</h2>
+        <h2>这是List组件 {{ str }}</h2>
+        <hr>
         <div v-for="item in list" :key="item.id">{{ item.name }}</div>
-        <News></News>
+        <News :str="str"></News>
     </div>
 </template>
 
@@ -19,6 +20,10 @@ export default {
         list: {
             type: Array,
             default: () => []
+        },
+        str: {
+            type: String,
+            default: ''
         }
     },
     components: {
