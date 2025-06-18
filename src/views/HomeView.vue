@@ -1,6 +1,6 @@
 <template>
     <div>
-        主页
+        <h1>主页</h1>
         <List :list="list"/>
     </div>
 </template>
